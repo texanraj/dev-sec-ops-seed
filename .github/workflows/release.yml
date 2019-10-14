@@ -19,4 +19,6 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_PACKAGE_TOKEN }}
-        run: curl -sL https://git.io/goreleaser | bash -s -- --rm-dist
+        run: |
+          echo ${{ secrets.GITHUB_PACKAGE_TOKEN }} | docker login -u danielpacak --password-stdin docker.pkg.github.com
+          curl -sL https://git.io/goreleaser | bash -s -- --rm-dist
