@@ -18,13 +18,13 @@ jobs:
         run: make test
       - name: Loging to GitHub Package Registry
         run: |
-          docker login -u ${{ secrets.GITHUB_USER }} --password ${{ secrets.GITHUB_TOKEN }} docker.pkg.github.com
+          docker login -u ${{ secrets.GITHUB_REGISTRY_USER }} -p ${{ secrets.GITHUB_REGISTRY_TOKEN }} docker.pkg.github.com
       - name: Release
         uses: goreleaser/goreleaser-action@v1
         with:
           args: release --rm-dist
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_REGISTRY_TOKEN }}
       - name: Scan image for vulnerabilities
         uses: docker://docker.io/aquasec/trivy:0.1.6
         with:
