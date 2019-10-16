@@ -19,6 +19,7 @@ jobs:
       - name: Loging to GitHub Package Registry
         run: |
           echo ${{ secrets.GITHUB_TOKEN }} | docker login -u ${{ secrets.GITHUB_USER }} --password-stdin docker.pkg.github.com
+        shell: bash
       - name: Release
         uses: goreleaser/goreleaser-action@v1
         with:
