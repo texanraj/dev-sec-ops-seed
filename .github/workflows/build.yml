@@ -13,11 +13,11 @@ jobs:
         uses: actions/checkout@v1
       - name: Run unit tests
         run: make test
-      - name: Upload code coverage
-        uses: codecov/codecov-action@v1.0.2
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./coverage.txt
+//      - name: Upload code coverage
+//        uses: codecov/codecov-action@v1.0.2
+//        with:
+//          token: ${{ secrets.CODECOV_TOKEN }}
+//          file: ./coverage.txt
       - name: Release snapshot
         uses: goreleaser/goreleaser-action@v1
         with:
@@ -25,4 +25,4 @@ jobs:
       - name: Scan image for vulnerabilities
         uses: docker://docker.io/aquasec/trivy:0.2.1
         with:
-          args: --cache-dir /var/lib/trivy --exit-code 1 --no-progress docker.pkg.github.com/danielpacak/dev-sec-ops-seed/seed:${{ github.sha }}
+          args: --cache-dir /var/lib/trivy --exit-code 1 --no-progress docker.pkg.github.com/texanraj/dev-sec-ops-seed/seed:${{ github.sha }}
