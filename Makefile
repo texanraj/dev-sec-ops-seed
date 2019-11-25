@@ -1,7 +1,7 @@
 SOURCES := $(shell find . -name '*.go')
 BINARY := seed
 IMAGE_TAG := dev
-IMAGE := docker.pkg.github.com/danielpacak/dev-sec-ops-seed/seed:$(IMAGE_TAG)
+IMAGE := docker.pkg.github.com/texanraj/dev-sec-ops-seed/seed:$(IMAGE_TAG)
 
 build: $(BINARY)
 
