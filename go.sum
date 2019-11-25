@@ -1,5 +1,7 @@
 github.com/caarlos0/env/v6 v6.1.0 h1:4FbM+HmZA/Q5wdSrH2kj0KQXm7xnhuO8y3TuOTnOvqc=
 github.com/caarlos0/env/v6 v6.1.0/go.mod h1:iUA6X3VCAOwDhoqvgKlTGjjwJzQseIJaFYApUqQkt+8=
+github.com/danielpacak/dev-sec-ops-seed v0.0.6 h1:nzS7XXXy3kWFSyiszeTcAf/64D6AIM/1ZKxt66eZRXs=
+github.com/danielpacak/dev-sec-ops-seed v0.0.6/go.mod h1:Z/8w5O4n2p4vj+lWVpjhbyVQ7W0Fies23GHLWAGQ5Kw=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
