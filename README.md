@@ -126,7 +126,7 @@ $ kubect set image deployment seed \
 To test that the deployment has been updated to version 0.0.6 you can run:
 
 ```
-$ kubect port-forwar servcie/seed 8080:8080 &> /dev/null &
+$ kubect port-forward servcie/seed 8080:8080 &> /dev/null &
 $ curl http://localhost:8080/api/info | jq .version
 0.0.6
 ```
