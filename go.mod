@@ -1,4 +1,4 @@
-module github.com/danielpacak/dev-sec-ops-seed
+module github.com/texanraj/dev-sec-ops-seed
 
 go 1.13
 
